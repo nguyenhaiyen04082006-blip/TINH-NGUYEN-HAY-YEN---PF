@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #173854;
+    background-color: #eef6fc;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Canva Template EAGoDbccYHA Inspo: Sky Blue Dreamy Clouds Aesthetic */
+:root {
+  --sky-powder: #cbdfef;
+  --sky-azure: #87c7e8;
+  --sky-light: #e8f4fc;
+  --sky-deep: #137db5;
+  --sky-navy: #1e3a5f;
+  --cloud-white: #ffffff;
+  --cloud-warm: #faf9f4;
+}
+
+.bg-dreamy-sky-gradient {
+  background: linear-gradient(180deg, #d2e6f7 0%, #b8ddf4 35%, #e9f4fc 100%);
+}
+
+.bg-dreamy-clouds-mesh {
+  background-color: #eef6fc;
+  background-image: 
+    radial-gradient(at 15% 15%, rgba(203, 223, 239, 0.8) 0px, transparent 50%),
+    radial-gradient(at 85% 20%, rgba(135, 199, 232, 0.45) 0px, transparent 50%),
+    radial-gradient(at 50% 60%, rgba(255, 255, 255, 0.9) 0px, transparent 60%),
+    radial-gradient(at 80% 85%, rgba(192, 220, 245, 0.6) 0px, transparent 50%),
+    radial-gradient(at 20% 80%, rgba(214, 235, 252, 0.7) 0px, transparent 50%);
+}
+
+.cloud-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 12px 35px -8px rgba(30, 58, 95, 0.08), 0 4px 12px -2px rgba(135, 199, 232, 0.15);
+}
+
+.cloud-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cloud-card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px -10px rgba(19, 125, 181, 0.15), 0 6px 16px -2px rgba(135, 199, 232, 0.25);
+  border-color: rgba(135, 199, 232, 0.6);
+}
+
+.cloud-pill {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(135, 199, 232, 0.45);
+  box-shadow: 0 2px 8px -2px rgba(19, 125, 181, 0.08);
+}
+
+.sparkle-star {
+  display: inline-block;
+  color: #137db5;
+  filter: drop-shadow(0 0 6px rgba(135, 199, 232, 0.6));
+}
